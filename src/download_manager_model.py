@@ -351,7 +351,7 @@ class DownloadManagerModel:
         meta_file.setValue("fileID", response.file_details.file_id)
         meta_file.setValue("url", f"https://www.nexusmods.com/skyrimspecialedition/mods/{response.mod.mod_id}")
         meta_file.setValue("name", name)
-        meta_file.setValue("description", response.mod.summary)
+        meta_file.setValue("description", response.file_details.description)
         meta_file.setValue("modName", mod_name)
         meta_file.setValue("version", response.file_details.version)
         meta_file.setValue("newestVersion", "")
